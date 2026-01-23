@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aluvare | Aluminium Reimagined</title>
+    <meta name="description"
+        content="Aluvare specializes in custom aluminium design and fabrication, offering premium windows, doors, railings, and architectural solutions. Precision engineering for modern spaces.">
+    <meta name="keywords"
+        content="Aluminium, Fabrication, Windows, Doors, Railings, UPVC, Architecture, Design, Aluvare, Custom Aluminium, Curtain Walls">
+    <meta name="author" content="Aluvare">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.aluvare.in/">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.aluvare.in/">
+    <meta property="og:title" content="Aluvare | Aluminium Reimagined">
+    <meta property="og:description"
+        content="Premium custom aluminium design and fabrication. Windows, doors, and architectural solutions.">
+    <meta property="og:image"
+        content="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://www.aluvare.in/">
+    <meta property="twitter:title" content="Aluvare | Aluminium Reimagined">
+    <meta property="twitter:description"
+        content="Premium custom aluminium design and fabrication. Windows, doors, and architectural solutions.">
+    <meta property="twitter:image"
+        content="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="https://cdn-icons-png.flaticon.com/512/25/25694.png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- GSAP & Lenis -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.29/dist/lenis.min.js"></script>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <span class="logo-icon">A</span> ALUVARE
+            </a>
+            <div class="nav-toggle" id="navToggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact" class="btn-primary">Contact Us</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="home" class="hero">
+        <div class="hero-bg-wrapper">
+            <img src="images/hero-luxury.png" alt="Luxury Aluminium Facade" class="hero-bg" data-speed="0.5">
+        </div>
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <h1 class="hero-title">Precision. Performance.<br>Perfection in Aluminium.</h1>
+            <p class="hero-subtitle">Building strong, sleek, and sustainable solutions that last.</p>
+            <div class="hero-btns">
+                <a href="#services" class="btn btn-primary">Explore Solutions</a>
+                <a href="#contact" class="btn btn-outline">Get a Quote</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="section about">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="subtitle">Who We Are</span>
+                <h2>Aluminium Reimagined</h2>
+                <div class="line"></div>
+            </div>
+            <div class="about-grid">
+                <div class="about-text slide-in-left">
+                    <p>Aluvare is a leading name in custom aluminium design and fabrication. With years of experience in
+                        architectural and industrial aluminium works, we bring engineering excellence, aesthetic
+                        precision, and unmatched durability to every project.</p>
+
+                    <h3 style="margin-top: 20px; margin-bottom: 10px; font-size: 1.2rem;">We Specialize In:</h3>
+                    <ul class="feature-list" style="margin-top: 10px;">
+                        <li><i class="fas fa-check-circle"></i> Architectural Aluminium Fabrication</li>
+                        <li><i class="fas fa-check-circle"></i> Structural Glazing & Curtain Walls</li>
+                        <li><i class="fas fa-check-circle"></i> Aluminium Doors & Window Systems</li>
+                        <li><i class="fas fa-check-circle"></i> ACP Cladding & Facade Design</li>
+                    </ul>
+                </div>
+                <div class="about-image slide-in-right">
+                    <!-- Placeholder for an architectural image -->
+                    <div class="img-placeholder">
+                        <i class="far fa-building"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="section services bg-light">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="subtitle">Our Expertise</span>
+                <h2>Premium Fabrication Services</h2>
+                <div class="line"></div>
+            </div>
+            <div class="services-grid">
+                <!-- Service 1 -->
+                <div class="service-card pdf-card"
+                    data-pdf="https://drive.google.com/file/d/1TRQoiu99tnr3Uir6AI95QZsLDITQNC_n/preview">
+                    <div class="icon-box">
+                        <i class="fas fa-door-open"></i>
+                    </div>
+                    <h3>Windows</h3>
+                    <p>Superior performance with contemporary design. Engineered for thermal efficiency and sound
+                        insulation.</p>
+                </div>
+                <!-- Service 2 -->
+                <div class="service-card pdf-card"
+                    data-pdf="https://drive.google.com/file/d/1TRQoiu99tnr3Uir6AI95QZsLDITQNC_n/preview">
+                    <div class="icon-box">
+                        <i class="fas fa-dungeon"></i>
+                    </div>
+                    <h3>Sliding Doors</h3>
+                    <p>Effortless operation and a sleek, minimalist look. Designed to maximize light and create fluid
+                        transitions.</p>
+                </div>
+                <!-- Service 3 -->
+                <div class="service-card pdf-card"
+                    data-pdf="https://drive.google.com/file/d/1TRQoiu99tnr3Uir6AI95QZsLDITQNC_n/preview">
+                    <div class="icon-box">
+                        <i class="fas fa-layer-group"></i>
+                    </div>
+                    <h3>Railings</h3>
+                    <p>Strength, safety, and modern elegance for balconies, terraces, and staircases.</p>
+                </div>
+                <!-- Service 4 -->
+                <div class="service-card pdf-card"
+                    data-pdf="https://drive.google.com/file/d/1TRQoiu99tnr3Uir6AI95QZsLDITQNC_n/preview">
+                    <div class="icon-box">
+                        <i class="fas fa-building"></i>
+                    </div>
+                    <h3>Curtain Walls</h3>
+                    <p>Elegant glass facades designed with precision-engineered aluminium frames.</p>
+                </div>
+                <!-- Service 5 -->
+                <div class="service-card pdf-card"
+                    data-pdf="https://drive.google.com/file/d/1TRQoiu99tnr3Uir6AI95QZsLDITQNC_n/preview">
+                    <div class="icon-box">
+                        <i class="fas fa-th-large"></i>
+                    </div>
+                    <h3>Partitions</h3>
+                    <p>Lightweight, corrosion-resistant, and tailor-made for interior spaces.</p>
+                </div>
+                <!-- Service 6 -->
+                <div class="service-card pdf-card"
+                    data-pdf="https://drive.google.com/file/d/1TRQoiu99tnr3Uir6AI95QZsLDITQNC_n/preview">
+                    <div class="icon-box">
+                        <i class="fas fa-igloo"></i>
+                    </div>
+                    <h3>Dome Structures</h3>
+                    <p>Lightweight, architecturally striking domes for skylights and atriums.</p>
+                </div>
+                <!-- Service 7 -->
+                <div class="service-card pdf-card"
+                    data-pdf="https://drive.google.com/file/d/1TRQoiu99tnr3Uir6AI95QZsLDITQNC_n/preview">
+                    <div class="icon-box">
+                        <i class="fas fa-paint-roller"></i>
+                    </div>
+                    <h3>Finishing Options</h3>
+                    <p>Powder Coating, Anodizing, Wood Finish, and Brushed Textures available.</p>
+                </div>
+                <!-- Service 8 -->
+                <div class="service-card pdf-card" id="shower-card"
+                    data-pdf="https://drive.google.com/file/d/1TRQoiu99tnr3Uir6AI95QZsLDITQNC_n/preview">
+                    <div class="icon-box">
+                        <i class="fas fa-shower"></i>
+                    </div>
+                    <h3>Shower Enclosure</h3>
+                    <p>Elegant and durable shower enclosures designed for modern bathrooms.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="section gallery">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="subtitle">Portfolio</span>
+                <h2>Our Work</h2>
+                <div class="line"></div>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item item-1"></div>
+                <div class="gallery-item item-2"></div>
+                <div class="gallery-item item-3"></div>
+                <div class="gallery-item item-4"></div>
+                <div class="gallery-item item-5"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact bg-dark">
+        <div class="container">
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <h2>Get In Touch</h2>
+                    <p>Ready to transform your space? Contact us for a consultation.</p>
+
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Address</h4>
+                            <p>Khasra No. 41/16 and 41/25, Ground Floor,<br>Village Tikri Kalan, New Delhi-110041</p>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <i class="fas fa-phone-alt"></i>
+                        <div>
+                            <h4>Phone</h4>
+                            <p>+91 9810172403</p>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>aluvarecraft@gmail.com<br>info@aluvare.in</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form-wrapper">
+                    <form class="contact-form" action="mailto:info@aluvare.in" method="post" enctype="text/plain">
+                        <div class="form-group">
+                            <input type="text" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea rows="5" placeholder="Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container text-center">
+            <p>&copy; 2024 Aluvare. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- PDF Modal -->
+    <div id="pdfModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <iframe src="https://drive.google.com/file/d/1TRQoiu99tnr3Uir6AI95QZsLDITQNC_n/preview" width="100%"
+                height="100%" allow="autoplay"></iframe>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
