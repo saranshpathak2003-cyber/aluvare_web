@@ -160,6 +160,43 @@ document.addEventListener('DOMContentLoaded', () => {
         console.error('Modal or Iframe missing');
     }
 
+    // Image Lightbox Logic
+    const imageModal = document.getElementById('imageModal');
+    const galleryItems = document.querySelectorAll('.gallery-item');
+    const lightboxImg = document.getElementById('lightboxImg');
+    const closeLightbox = document.querySelector('.close-lightbox');
+
+    if (imageModal && lightboxImg) {
+        galleryItems.forEach(item => {
+            item.addEventListener('click', function () {
+                const imgSrc = this.getAttribute('data-image');
+                if (imgSrc) {
+                    lightboxImg.src = imgSrc;
+                    imageModal.classList.add('show');
+                    document.body.style.overflow = 'hidden';
+                }
+            });
+        });
+
+        function closeImageModal() {
+            imageModal.classList.remove('show');
+            document.body.style.overflow = '';
+            setTimeout(() => {
+                lightboxImg.src = '';
+            }, 400);
+        }
+
+        if (closeLightbox) {
+            closeLightbox.onclick = closeImageModal;
+        }
+
+        imageModal.addEventListener('click', function (e) {
+            if (e.target === imageModal || e.target.classList.contains('lightbox-content')) {
+                closeImageModal();
+            }
+        });
+    }
+
     // Global Click Logger (Debug)
     window.addEventListener('click', (e) => {
         console.log('Global Click:', e.target);
