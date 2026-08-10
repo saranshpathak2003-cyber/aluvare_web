@@ -365,7 +365,7 @@ html.lenis {
 /* Services Section */
 .services-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(3, 1fr);
     /* borders removed */
 }
 
@@ -504,6 +504,17 @@ html.lenis {
 .info-item p {
     color: var(--text-muted);
     font-size: 1rem;
+}
+
+.info-item p a {
+    color: var(--text-muted);
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+.info-item p a:hover {
+    color: var(--text-main);
+    text-decoration: underline;
 }
 
 .contact-form {
