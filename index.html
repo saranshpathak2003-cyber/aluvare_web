@@ -43,7 +43,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@400;500;600;700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap"
         rel="stylesheet">
 
     <!-- Styles -->
@@ -73,7 +73,7 @@
                 <li><a href="#about">About</a></li>
                 <li><a href="#services">Services</a></li>
                 <li><a href="#gallery">Gallery</a></li>
-                <li><a href="#contact" class="btn-primary">Contact Us</a></li>
+                <li><a href="#contact" class="btn btn-primary">Contact Us</a></li>
             </ul>
         </div>
     </nav>
@@ -86,6 +86,7 @@
         </div>
         <div class="hero-overlay"></div>
         <div class="container hero-content">
+            <span class="eyebrow fade-in-up">Precision Aluminium Fabrication</span>
             <h1 class="hero-title">Precision. Performance.<br>Perfection in Aluminium.</h1>
             <p class="hero-subtitle">Building strong, sleek, and sustainable solutions that last.</p>
             <div class="hero-btns">
@@ -93,12 +94,16 @@
                 <a href="#contact" class="btn btn-outline">Get a Quote</a>
             </div>
         </div>
+        <a href="#about" class="scroll-cue" aria-label="Scroll to About section">
+            <span></span>
+        </a>
     </header>
 
     <!-- About Section -->
     <section id="about" class="section about">
         <div class="container">
             <div class="section-header text-center">
+                <span class="section-index">01</span>
                 <span class="subtitle">Who We Are</span>
                 <h2>Aluminium Reimagined</h2>
                 <div class="line"></div>
@@ -109,12 +114,12 @@
                         architectural and industrial aluminium works, we bring engineering excellence, aesthetic
                         precision, and unmatched durability to every project.</p>
 
-                    <h3 style="margin-top: 20px; margin-bottom: 10px; font-size: 1.2rem;">We Specialize In:</h3>
-                    <ul class="feature-list" style="margin-top: 10px;">
+                    <h3 class="about-subheading">We Specialize In</h3>
+                    <ul class="feature-list">
                         <li><i class="fas fa-check-circle"></i> Architectural Aluminium Fabrication</li>
-                        <li><i class="fas fa-check-circle"></i> Structural Glazing & Curtain Walls</li>
-                        <li><i class="fas fa-check-circle"></i> Aluminium Doors & Window Systems</li>
-                        <li><i class="fas fa-check-circle"></i> ACP Cladding & Facade Design</li>
+                        <li><i class="fas fa-check-circle"></i> Structural Glazing &amp; Curtain Walls</li>
+                        <li><i class="fas fa-check-circle"></i> Aluminium Doors &amp; Window Systems</li>
+                        <li><i class="fas fa-check-circle"></i> ACP Cladding &amp; Facade Design</li>
                     </ul>
                 </div>
                 <div class="about-image slide-in-right">
@@ -130,6 +135,7 @@
     <section id="services" class="section services bg-light">
         <div class="container">
             <div class="section-header text-center">
+                <span class="section-index">02</span>
                 <span class="subtitle">Our Expertise</span>
                 <h2>Premium Fabrication Services</h2>
                 <div class="line"></div>
@@ -199,16 +205,27 @@
     <section id="gallery" class="section gallery">
         <div class="container">
             <div class="section-header text-center">
+                <span class="section-index">03</span>
                 <span class="subtitle">Portfolio</span>
                 <h2>Our Work</h2>
                 <div class="line"></div>
             </div>
             <div class="gallery-grid">
-                <div class="gallery-item item-1" data-image="images/PHOTO-2026-02-03-06-24-55.webp"></div>
-                <div class="gallery-item item-2" data-image="images/IMG_1023.webp"></div>
-                <div class="gallery-item item-3" data-image="images/IMG_1025.webp"></div>
-                <div class="gallery-item item-4" data-image="images/IMG_1026.webp"></div>
-                <div class="gallery-item item-5" data-image="images/IMG_1027.webp"></div>
+                <div class="gallery-item item-1" data-image="images/PHOTO-2026-02-03-06-24-55.webp">
+                    <span class="gallery-overlay"><i class="fas fa-expand"></i></span>
+                </div>
+                <div class="gallery-item item-2" data-image="images/IMG_1023.webp">
+                    <span class="gallery-overlay"><i class="fas fa-expand"></i></span>
+                </div>
+                <div class="gallery-item item-3" data-image="images/IMG_1025.webp">
+                    <span class="gallery-overlay"><i class="fas fa-expand"></i></span>
+                </div>
+                <div class="gallery-item item-4" data-image="images/IMG_1026.webp">
+                    <span class="gallery-overlay"><i class="fas fa-expand"></i></span>
+                </div>
+                <div class="gallery-item item-5" data-image="images/IMG_1027.webp">
+                    <span class="gallery-overlay"><i class="fas fa-expand"></i></span>
+                </div>
             </div>
         </div>
     </section>
@@ -216,9 +233,14 @@
     <!-- Contact Section -->
     <section id="contact" class="section contact bg-dark">
         <div class="container">
+            <div class="section-header text-center">
+                <span class="section-index">04</span>
+                <span class="subtitle">Get In Touch</span>
+                <h2>Start Your Project</h2>
+                <div class="line"></div>
+            </div>
             <div class="contact-wrapper">
                 <div class="contact-info">
-                    <h2>Get In Touch</h2>
                     <p>Ready to transform your space? Contact us for a consultation.</p>
 
                     <div class="info-item">
@@ -266,7 +288,16 @@
 
     <!-- Footer -->
     <footer>
-        <div class="container text-center">
+        <div class="container footer-inner">
+            <div class="footer-brand">
+                <a href="#home" class="logo">ALUVARE</a>
+                <p>Aluminium Reimagined</p>
+            </div>
+            <a href="#home" class="back-to-top" aria-label="Back to top">
+                <i class="fas fa-arrow-up"></i>
+            </a>
+        </div>
+        <div class="container text-center footer-bottom">
             <p>&copy; 2026 Aluvare. All Rights Reserved.</p>
         </div>
     </footer>
