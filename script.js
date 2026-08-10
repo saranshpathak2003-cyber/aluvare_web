@@ -40,6 +40,29 @@ document.addEventListener('DOMContentLoaded', () => {
     updateNavbarState();
     window.addEventListener('scroll', updateNavbarState, { passive: true });
 
+    // Scroll-spy — highlight whichever section is actually in view, not just "Home".
+    const sections = document.querySelectorAll('#home, #about, #services, #gallery, #contact');
+    const navAnchors = document.querySelectorAll('.nav-links a[href^="#"]');
+
+    if (sections.length && navAnchors.length) {
+        const setActiveLink = (id) => {
+            navAnchors.forEach(link => {
+                link.classList.toggle('active', link.getAttribute('href') === `#${id}`);
+            });
+        };
+
+        // A band through the upper-middle of the viewport — a section counts as
+        // "current" once it crosses that band, which feels right whether you're
+        // scrolling past a short section or sitting inside a tall one.
+        const sectionObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) setActiveLink(entry.target.id);
+            });
+        }, { rootMargin: '-45% 0px -50% 0px', threshold: 0 });
+
+        sections.forEach(section => sectionObserver.observe(section));
+    }
+
     // Initialize Lenis (Smooth Scrolling) — skip entirely under reduced motion,
     // native scrolling is the gentler equivalent.
     if (!prefersReducedMotion && typeof Lenis !== 'undefined') {
